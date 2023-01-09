@@ -106,7 +106,7 @@ section.product .tab .tab_title ul li.active:before {display: block;}
 
 /* 탭 내용 */
 section.product .tab .tab_con {margin-top: 10vw; position: relative; }
-section.product .tab .tab_con > div {position: absolute; width: 450px; }
+section.product .tab .tab_con > div {position: absolute; width: 450px; left: 50%; transform: translateX(-50%);}
 section.product .tab .tab_con .swiper {height: 80vh; width: 80%; }
 section.product .tab .tab_con .swiper h2 {font-family: 'NanumB'; font-size: 3.5vw; 
                              display: inline-block; 
@@ -240,7 +240,7 @@ footer small {background-color: #062348; display: block; width: 100%; text-align
 
 
 /* 주메뉴 */
-.popup_menu .popup_nav {margin-top: 8vw; background-color: #fff0b4; padding: 7vw 5vw;  height: 110vw;}
+.popup_menu .popup_nav {margin-top: 8vw; background-color: #fff0b4; padding: 7vw 5vw; /* height: 110vw;*/}
 .popup_menu .popup_nav nav > ul > li {margin-top: 6vw; }
 .popup_menu .popup_nav nav > ul > li:first-child {margin-top: 4vw;}
 .popup_menu .popup_nav nav > ul > li > a {font-size: 5vw; text-align: center; background-color: #fff;
@@ -426,7 +426,7 @@ footer small {display: block; width: 100%; margin: 0 ; height: 1.8vw;
 
 
 /* 주메뉴 */
-.popup_menu .popup_nav {margin-top: 0vw; background-color: #fff0b4; padding: 2vw 30vw;  height: 40vw;}
+.popup_menu .popup_nav {margin-top: 0vw; background-color: #fff0b4; padding: 2vw 30vw;  /*height: 40vw;*/}
 .popup_menu .popup_nav nav > ul > li {margin-top: 3vw; }
 .popup_menu .popup_nav nav > ul > li:first-child {margin-top: 2vw;}
 .popup_menu .popup_nav nav > ul > li > a {font-size: 2.5vw; text-align: center; background-color: #fff;
