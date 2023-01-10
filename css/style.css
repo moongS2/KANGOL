@@ -306,7 +306,7 @@ background: linear-gradient(to top, #f5989d 20%, transparent 20%);}
 
 section.main_slide .swiper .main2 .main_txt {font-size: 3.5vw; position: absolute; font-family: 'Nanum Myeongjo', serif;
                                     color: #fff; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.5);
-                                    width: 57.8vw; height: 42%; }
+                                    width: 58.2%; height: 42%; }
 section.main_slide .swiper .main2 .main_txt h3 {font-weight: lighter; font-size: 3vw;}
 
 section.main_slide .swiper .main3 .main_txt {position: absolute; font-size: 4.6vw; font-family: 'NanumR';
@@ -402,7 +402,7 @@ footer .f_bottom {display: flex; flex-flow: row nowrap; justify-content: space-b
                     height: 15vw; margin-top: 2vw;}
 footer .f_bottom .f_logo {width: 8vw; margin: 0; margin-bottom: 10vw; margin-left: 12vw;}
 
-footer .f_bottom .right {width: 40vw; height: 20vw; margin-right:-15vw; margin-bottom: 4.5vw;}
+footer .f_bottom .right {width: 45vw; height: 20vw; margin-right:-15vw; margin-bottom: 4.5vw;}
 
 footer .f_bottom .sns {margin-top: 2vw; margin-bottom: 1.5vw;}
 
@@ -410,7 +410,7 @@ footer .f_bottom .sns ul {display: flex; margin-left: 0vw;}
 footer .f_bottom .sns ul li {width: 2.5vw; margin: 0 1.1vw;}
 
 footer .f_bottom address { font-size: 0.9vw; margin-top: 0vw; line-height: 1.3vw; padding: 0; margin: 0;
-                            width: 50vw;  text-align: left;}
+                            width: 50vw;  text-align: left; color: #fff;}
 
 footer small {display: block; width: 100%; margin: 0 ; height: 1.8vw;
                         padding: 2vw 0 1vw 0;  margin-top: 2vw; font-size: 1vw; }
