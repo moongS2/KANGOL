@@ -402,7 +402,7 @@ footer .f_bottom {display: flex; flex-flow: row nowrap; justify-content: space-b
                     height: 15vw; margin-top: 2vw;}
 footer .f_bottom .f_logo {width: 8vw; margin: 0; margin-bottom: 10vw; margin-left: 12vw;}
 
-footer .f_bottom .right {width: 30vw; height: 20vw; margin-right:-8vw; margin-bottom: 4.5vw;}
+footer .f_bottom .right {width: 40vw; height: 20vw; margin-right:-15vw; margin-bottom: 4.5vw;}
 
 footer .f_bottom .sns {margin-top: 2vw; margin-bottom: 1.5vw;}
 
@@ -538,11 +538,11 @@ section.product .tab .tab_title ul li.active:before {width: 40px; height: 40px; 
 
 section.product .tab .tab_con {margin-top: 5vw;}
 section.product .tab .tab_con .swiper-slide {height: 100%;}
-section.product .tab .tab_con .swiper h2 {font-size: 1vw; margin-top: 9vw;}
+section.product .tab .tab_con .swiper h2 {font-size: 1vw; margin-top: -5vw;}
 section.product .tab .tab_con > div {width: 100%;}
 
 section.product .tab .tab_con .swiper {height: 50vh; }
-section.product .tab .tab_con .swiper h2 b {background-color: #fff;}
+section.product .tab .tab_con .swiper h2 b {background-color: #fff; }
 
 section.product .tab .tab_con .swiper-button-next:after { content: ""; background-position: center; background-repeat: no-repeat;
     background-size: cover; background-image: url(../img/right_arrow.png);
