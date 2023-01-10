@@ -399,10 +399,10 @@ footer .f_top ul li a {font-size: 1.2vw;}
 footer .f_top {border-bottom: none; margin-bottom: 0; height: 5vw;}
 
 footer .f_bottom {display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center;
-                    height: 15vw; margin-top: 4vw; width: 60vw;}
-footer .f_bottom .f_logo {width: 8vw; margin: 0; margin-bottom: 14vw; margin-left: 12vw;}
+                    height: 10vw; margin-top: 4vw; width: 60vw;}
+footer .f_bottom .f_logo {width: 8vw; margin: 0; margin-bottom: 10vw; margin-left: 12vw;}
 
-footer .f_bottom .right {width: 45vw; height: 20vw; margin-right:-10vw; margin-bottom: 8vw;}
+footer .f_bottom .right {width: 30vw; height: 10vw; margin-right:5vw; margin-bottom: 13vw;}
 
 footer .f_bottom .sns {margin-top: 2vw; margin-bottom: 1.5vw;}
 
