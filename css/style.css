@@ -394,7 +394,7 @@ footer .marquee .marquee_box img {width: 5vw; margin-right: 1.5vw; margin-top: -
         100% {left: -100%;}}
 
 footer {padding:0vw; height: 30vw;}
-footer .f_wrap { display: flex; width: 50%; margin: 0 auto; flex-flow: column nowrap; padding-top: 1vw; height: 15vw;}
+footer .f_wrap { display: flex; width: 50%; margin: 0 auto; flex-flow: column nowrap; padding-top: 1vw;}
 footer .f_top ul li a {font-size: 1.2vw;}
 footer .f_top {border-bottom: none; margin-bottom: 0; height: 5vw;}
 
