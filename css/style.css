@@ -219,7 +219,7 @@ footer .f_bottom .sns ul {display: flex; margin-left: 29vw;}
 footer .f_bottom .sns ul li {width: 35px; margin: 1.5vw;}
 
 footer .f_bottom address { font-weight: normal; font-style: normal; font-family: 'NanumR'; font-size: 2.3vw;
-                            line-height: 3vw; text-align: center; margin-top: 4vw;}
+                            line-height: 3vw; text-align: center; margin-top: 4vw; white-space: nowrap;}
 footer .f_bottom address > a {color: #fff;}
 footer small {background-color: #062348; display: block; width: 100%; text-align: center; margin-left: -5vw;
                         padding: 5vw; margin-top: 10vw; color: #999; font-size: 2.4vw; font-family: 'NanumR';}
@@ -401,9 +401,9 @@ footer .f_top {border-bottom: none; margin-bottom: 0; height: 5vw;}
 
 footer .f_bottom {display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center;
                     height: 10vw; margin-top: 4vw; width: 60vw;}
-footer .f_bottom .f_logo {width: 8vw; margin: 0; margin-bottom: 10vw; margin-left: 12vw;}
+footer .f_bottom .f_logo {width: 8vw; margin: 0; margin-bottom: 5vw; margin-left: 12vw;}
 
-footer .f_bottom .right {width: 30vw; height: 10vw; margin-right:5vw; margin-bottom: 13vw;}
+footer .f_bottom .right {width: 30vw; height: 10vw; margin-right:5vw; margin-bottom: 7vw;}
 
 footer .f_bottom .sns {margin-top: 2vw; margin-bottom: 1.5vw;}
 
@@ -411,7 +411,7 @@ footer .f_bottom .sns ul {display: flex; margin-left: 0vw;}
 footer .f_bottom .sns ul li {width: 2.5vw; margin: 0 1.1vw;}
 
 footer .f_bottom address { font-size: 0.9vw; margin-top: 0vw; line-height: 1.3vw; padding: 0; margin: 0;
-                            width: 100vw;  text-align: left; color: #fff; }
+                            width: 100vw;  text-align: left; color: #fff; white-space: nowrap;}
 footer .f_bottom address > a {color: #fff;}
 
 footer small {display: block; width: 100%; margin: 0 ; height: 1.8vw;
