@@ -220,6 +220,7 @@ footer .f_bottom .sns ul li {width: 35px; margin: 1.5vw;}
 
 footer .f_bottom address { font-weight: normal; font-style: normal; font-family: 'NanumR'; font-size: 2.3vw;
                             line-height: 3vw; text-align: center; margin-top: 4vw; }
+footer .f_bottom address a {color: #fff;}
 footer small {background-color: #062348; display: block; width: 100%; text-align: center; margin-left: -5vw;
                         padding: 5vw; margin-top: 10vw; color: #999; font-size: 2.4vw; font-family: 'NanumR';}
 
