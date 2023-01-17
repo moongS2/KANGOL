@@ -280,7 +280,7 @@ footer small {background-color: #062348; display: block; width: 100%; text-align
 
 
 /* 태블릿(480px~1280px) */
-@media screen and (min-width:481px){
+@media screen and (min-width:768px){
 
 header {padding: 3vw; height: 8.5vw;}
 header .logo {width: 5.6vw; height: 5.6vw; position: absolute; top: 1.5vw; left: 50%; transform: translateX(-50%)}
@@ -472,7 +472,7 @@ footer small {display: block; width: 100%; margin: 0 ; height: 1.8vw;
 @media screen and (min-width:1281px) {
 
 header{ background-color: #fff; display: flex; padding: 2vw; padding-bottom: 1vw; justify-content: space-around;
-        height: 3.6vw; }
+        height: 3.7vw; }
 
 header .logo {width: 2.5vw; height: 2.5vw; background-image: url(../img/logo2.png); 
                 cursor: pointer; position: absolute; top: 1vw;left: 50%; transform: translateX(-50%);}
@@ -488,21 +488,31 @@ header .right_menu .member ul li:first-child a:after { content: "|"; float: righ
 
 
 header nav {display: block; margin-top: 0.1vw; margin-left: -3vw;} 
-header nav > ul {display: flex; justify-content: space-between; width: 30vw; padding-bottom: 1vw;}
-header nav > ul > li >a {font-size: 0.8vw; }
+header nav > ul {display: flex; justify-content: space-between; width: 30vw; padding-bottom: 1vw; }
+header nav > ul > li >a {font-size: 0.8vw; position: relative; padding-bottom: 0.2vw;}
+
 header nav > ul > li:hover > a {color: #1d66be;}
+header nav > ul > li > a:after {content: ""; position: absolute; width: 0; height: 1px;
+    background-color: #111; bottom: 0; left: 0;   
+    transition: all 0.5s; }
+header nav > ul > li > a:hover:after {width: 100%; opacity:1; }
 
 /* pc버전 서브메뉴 */
 header nav .sub {position: absolute; left: 0; top: 3.6vw; display: flex; background-color: #fff;
-                justify-content: space-around; width: 100%; height: 300px; border-top: 1px solid #ddd;
+                justify-content: space-around; width: 100%; height: 300px;
                 overflow: hidden; }
 header nav .sub img {height: 280px; margin-top: 0.5vw;}
 header nav .sub .sub_title {font-size: 1.6vw; margin-top: 1vw; margin-left: -7.5vw;}
 header nav .sub .sub_title:after {content: ""; width: 3vw; height: 1px; background-color: #505050; display: block;
                                     float: right; margin-top: 1.1vw; margin-left: 1vw;}
 header nav .sub .sub_menu {margin-top: 1.1vw; margin-left: -30vw;}
-header nav .sub .sub_menu li a {font-size: 0.8vw; padding: 0.2vw 0;}
+header nav .sub .sub_menu li a {font-size: 0.8vw; padding: 0.2vw 0; position: relative; display: inline-block;}
 header nav .sub .sub_menu li a:hover {color: #1d66be;}
+
+header nav .sub .sub_menu li a:after {content: ""; position: absolute; width: 0; height: 1px;
+    background-color: #111; bottom: 0; left: 0;
+    transition: all 0.5s; }
+header nav .sub .sub_menu li a:hover:after {width: 100%; opacity:1; }
 
 /* 메인 슬라이드 */
 section.main_slide .swiper .swiper-slide {display: flex; flex-flow: row nowrap; justify-content: space-around;
@@ -521,7 +531,7 @@ section.main_slide .swiper .main1 .main_txt mark {background-color: #f5989d;
 section.main_slide .swiper .main2 .main_txt {font-size: 3vw; position: absolute; font-family: 'Nanum Myeongjo', serif;
              color: #fff; right: 0; bottom: 0;
             background-color: rgba(0, 0, 0, 0.5);
-            width: 55.8vw; height: 42%; }
+            width: 55.8%; height: 42%; }
 section.main_slide .swiper .main2 .main_txt h3 {font-weight: lighter; font-size: 3vw;}
 
 section.main_slide .swiper .main3 .main_txt {position: absolute; font-size: 3.5vw; font-family: 'NanumR';
@@ -539,6 +549,8 @@ section.product .tab .tab_title ul li a { font-size: 0.9vw;}
 section.product .tab .tab_title ul li.active:before {width: 40px; height: 40px; top: 10px;}
 
 section.product .tab .tab_con {margin-top: 5vw;}
+section.product .tab .tab_con .swiper-slide img {filter: brightness(1); transition: 0.6s;}
+section.product .tab .tab_con .swiper-slide img:hover { filter: brightness(0.5);}
 section.product .tab .tab_con .swiper-slide {height: 100%;}
 section.product .tab .tab_con .swiper h2 {font-size: 1vw; margin-top: -5vw;}
 section.product .tab .tab_con > div {width: 100%;}
@@ -560,7 +572,8 @@ section.product .tab .tab_con .swiper-pagination-bullet { width: 40px; height: 4
 section.event { padding: 0; margin-top: -2vw;}
 section.event h1{font-size: 2.4vw; margin-top: 7vw; text-underline-offset: 15px;}
 section.event .eventSlide {width: 80%; margin: 0 auto; overflow: hidden;}
-
+section.event .eventSlide .swiper-slide img {transition:all 0.5s;}
+section.event .eventSlide .swiper-slide:hover img {transform:scale(1.1, 1.1);} 
 section.event h3 { font-size: 1.3vw; padding: 3vw 3vw; padding-left: 15px; 
     margin-top: 1vw; margin-left: 10vw; width: 80px; margin-bottom: 1vw;}
 
@@ -584,6 +597,7 @@ section.collection h3 { font-size: 1.3vw; padding: 3vw 3vw; padding-left: 15px;
 section.collection {margin-top: 1vw;}
 
 section.collection .photo_box {width: 80%; margin: 0 auto;}
+section.collection .photo_box:hover {background-color: rgb(238, 238, 238);}
 section.collection .photo_box > div {display: flex; justify-content: space-between; padding: 2vw; flex-flow: column nowrap;}
 section.collection .photo_box .photo_img {width: 50%; margin-top: -8vw; margin-left: -5vw;}
 section.collection .photo_box .photo_txt {width: 100%;}
@@ -600,16 +614,30 @@ section.video .marquee {display: none;}
 /* 동영상 */
 section.video h1 {display: block; color: #062d5d; font-size: 2.4vw; text-align: center; text-decoration: underline;
                     text-underline-offset: 10px; margin-top: 1.5vw;}
-section.video .youtube {width: 40%; margin: 0 auto; margin-top: 5vw; height: 22.5vw;}
+section.video .youtube {width: 60%; margin: 0 auto; margin-top: 5vw; height: 34vw;}
 
 
 section.review {padding: 0; margin-bottom: 10vw;}
 section.review h1 {text-underline-offset: 15px; margin-top: 6vw; font-size: 2.5vw;}
-
+section.review .review_list {position: relative; }
 section.review .review_list ul {display: flex; flex-flow: row wrap;
                                 justify-content: space-around; width: 50%; margin: 0 auto;  margin-top: 4vw; }
-section.review .review_list ul li {width: 30%; margin-bottom: 2vw;}
+section.review .review_list ul li {width: 30%; margin-bottom: 2vw; transition: all 0.4s; box-sizing: border-box;}
 
+/* 수정함 */
+section.review .review_list ul li a {display: block; position: relative; }
+section.review .review_list ul li a:before,
+section.review .review_list ul li a:after{   position: absolute; content: ""; transition: width .5s, height .5s; opacity:0; }
+section.review .review_list ul li a:before {border-bottom: 13px solid #062d5d; border-left: 13px solid #062d5d;
+                                        width: 0%; height: 0%; left: -10px; bottom: -10px;}
+section.review .review_list ul li a:after{ border-top: 13px solid #062d5d; border-right: 13px solid #062d5d; width: 0%;
+                                    height: 0%; top: -10px; right: -10px;}
+section.review .review_list ul li a:hover:before { width: 102%; height: 102%; opacity: 1; }
+section.review .review_list ul li a:hover:after { width: 102%; height: 102%; opacity: 1;}
+
+section.review .review_list ul li img {filter: brightness(1); transition:filter 1s;}
+/* 수정함 */
+section.review .review_list ul li a:hover img {filter: brightness(0.7);}
 
 
 footer .marquee {width: 100%; height: 10vw; overflow: hidden; position: relative; 
@@ -643,6 +671,10 @@ footer .f_bottom address { font-size: 0.6vw; margin-top: 0vw; line-height: 1vw; 
 
 footer small {display: block; width: 100%; margin: 0 ; 
                         padding: 2vw 1.5vw 1vw 0vw;  margin-top: 0vw; font-size: 0.7vw; }
+
+.top {position: fixed; bottom: 80px; right: 20px; border-radius: 100px; 
+               width: 60px; height: 60px; cursor: pointer; z-index: 600; }
+.top img {width: 55px; margin-left: 3px;}
 
 
 
