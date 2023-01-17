@@ -150,22 +150,26 @@ if($(window).width() <= 1280) {
         $('header nav .sub').stop().slideDown();
         $('header nav .sub').css('z-index',11);
         $(this).next().css('z-index',20);
-    }else{
-      $('header nav .sub').stop().slideUp();
-    }
-  });
+      }else{
+        $('header nav .sub').stop().slideUp();
+      }
+    });
     $('header nav').mouseleave(function(){
       $('header nav .sub').stop().slideUp();
     });
+    
+    $('.top').click(function(){
+      //fullpage 플러그인을 사용할 때에는 명령어가 아래와 같습니다.
+      $.fn.fullpage.moveTo(1, 1);
+    });
 
+    
+    $('#fullpage').fullpage(); 
 
-
-    if($(window).width()>=1281){
-      $('#fullpage').fullpage();
-    }
+  
   }
 
-  // pc 버전에서만 fullpage 실행
+  
   
 
 
@@ -187,6 +191,8 @@ if($(window).width() <= 1280) {
       $('.tab_con > div:first').hide();
       $('.tab_con > div:last').show();
     });
+
+    
   
 });
 
