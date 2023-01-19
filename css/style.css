@@ -272,6 +272,9 @@ footer small {background-color: #062348; display: block; width: 100%; text-align
 
 
 
+.top {display: none;}
+
+
 
 
 
@@ -454,6 +457,10 @@ footer small {display: block; width: 100%; margin: 0 ; height: 1.8vw;
     background-image: url(../img/plus.png); background-position: center;
     background-repeat: no-repeat; background-size: cover;
     position: absolute; right: 3vw; top: 2vw;}
+
+
+
+.top {display: none;}
 }
 
 
@@ -672,7 +679,7 @@ footer .f_bottom address { font-size: 0.6vw; margin-top: 0vw; line-height: 1vw; 
 footer small {display: block; width: 100%; margin: 0 ; 
                         padding: 2vw 1.5vw 1vw 0vw;  margin-top: 0vw; font-size: 0.7vw; }
 
-.top {position: fixed; bottom: 80px; right: 20px; border-radius: 100px; 
+.top {display:block; position: fixed; bottom: 80px; right: 20px; border-radius: 100px; 
                width: 60px; height: 60px; cursor: pointer; z-index: 600; }
 .top img {width: 55px; margin-left: 3px;}
 
