@@ -163,6 +163,7 @@ section.collection .photo_box span { font-size: 5vw; display: block; margin-top:
     font-family: 'Book Antiqua', sans-serif; text-align: left;}
 section.collection .photo_box p {margin-top: 3vw; font-family: 'NanumR'; margin-bottom: 2vw;} 
 section.collection .photo_box .photo1 img {margin-top: 3vw;}
+section.collection .photo_box .photo2 {margin-top: 7vw;}
 
 /* 버튼 */
 section.collection button {padding: 3vw 7vw; border: none; background-color: #062d5d; color: #fff;
@@ -368,6 +369,8 @@ section.collection .photo_box .photo_txt {width: 100%;}
 section.collection .photo_box .photo_txt span {padding: 0.5vw; display: block;
             font-size: 2.4vw; margin-top: 1vw; margin-left: -5.5vw; }
 section.collection .photo_box .photo_txt p {font-size: 1.3vw; margin-top: 0.5vw; margin-left: -5vw; margin-bottom: -5vw;}
+
+section.collection .photo_box .photo2 {margin-top: 13vw;}
 
 section.collection button {padding: 1.7vw 2.2vw; font-size: 1.5vw; margin-top: 1.9vw;
                     border-radius: 60px; cursor: pointer;}
@@ -605,12 +608,20 @@ section.collection {margin-top: 1vw;}
 
 section.collection .photo_box {width: 80%; margin: 0 auto;}
 section.collection .photo_box:hover {background-color: rgb(238, 238, 238);}
-section.collection .photo_box > div {display: flex; justify-content: space-between; padding: 2vw; flex-flow: column nowrap;}
-section.collection .photo_box .photo_img {width: 50%; margin-top: -8vw; margin-left: -5vw;}
-section.collection .photo_box .photo_txt {width: 100%;}
-section.collection .photo_box .photo_txt span {padding: 0.5vw; display: block;
+section.collection .photo_box  { display: flex;  justify-content: space-between; }
+section.collection .photo_box .photo1 .photo_img {width: 30vw; margin-top: -8vw; margin-left: -5vw;}
+section.collection .photo_box .photo1 .photo_txt {width: 100%;}
+section.collection .photo_box .photo1 .photo_txt span {padding: 0.5vw; display: block;
                             font-size: 2vw; margin-top: 1vw; margin-left: -5.5vw; }
-section.collection .photo_box .photo_txt p {font-size: 1vw; margin-top: 0.5vw; margin-left: -5vw; margin-bottom: -5vw;}
+section.collection .photo_box .photo1 .photo_txt p {font-size: 1vw; margin-top: 0.5vw; margin-left: -5vw; margin-bottom: -5vw;}
+
+
+section.collection .photo_box .photo2 .photo_img {width: 30vw; margin-top: -18vw; margin-left: 16vw;}
+section.collection .photo_box .photo2 .photo_txt {text-align: right; width: 100%;}
+section.collection .photo_box .photo2 .photo_txt span {padding: 0.5vw; display: block; text-align: right;
+                            font-size: 2vw; margin-top: 1vw; margin-left: -5.5vw; }
+section.collection .photo_box .photo2 .photo_txt p {font-size: 1vw; margin-top: 0.5vw; margin-left: -5vw; margin-bottom: -5vw;}
+
 
 section.collection button {padding: 1.5vw 2.2vw; font-size: 1.2vw; margin-top: 1.8vw;
                                     border-radius: 60px; cursor: pointer;}
