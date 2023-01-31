@@ -164,7 +164,16 @@ if($(window).width() <= 1280) {
     });
 
     
-    $('#fullpage').fullpage(); 
+    $('#fullpage').fullpage({
+      afterLoad:function(anchorLink,index){
+        if(index==1){
+            $('.top').fadeOut();
+        }else{
+            $('.top').fadeIn();
+        }
+    }
+    }); 
+    
 
   
   }
